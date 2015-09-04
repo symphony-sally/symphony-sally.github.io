@@ -1,0 +1,25 @@
+This XML file does not appear to have any style information associated with it. The document tree is shown below.
+<Error>
+<Message>An error has occurred.</Message>
+<ExceptionMessage>
+The 'ObjectContent`1' type failed to serialize the response body for content type 'application/xml; charset=utf-8'.
+</ExceptionMessage>
+<ExceptionType>System.InvalidOperationException</ExceptionType>
+<StackTrace/>
+<InnerException>
+<Message>An error has occurred.</Message>
+<ExceptionMessage>Error while copying content to a stream.</ExceptionMessage>
+<ExceptionType>System.Net.Http.HttpRequestException</ExceptionType>
+<StackTrace/>
+<InnerException>
+<Message>An error has occurred.</Message>
+<ExceptionMessage>
+Could not load file or assembly 'Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+</ExceptionMessage>
+<ExceptionType>System.IO.FileLoadException</ExceptionType>
+<StackTrace>
+at System.ModuleHandle.ResolveType(RuntimeModule module, Int32 typeToken, IntPtr* typeInstArgs, Int32 typeInstCount, IntPtr* methodInstArgs, Int32 methodInstCount, ObjectHandleOnStack type) at System.ModuleHandle.ResolveTypeHandleInternal(RuntimeModule module, Int32 typeToken, RuntimeTypeHandle[] typeInstantiationContext, RuntimeTypeHandle[] methodInstantiationContext) at System.Reflection.RuntimeModule.ResolveType(Int32 metadataToken, Type[] genericTypeArguments, Type[] genericMethodArguments) at System.Reflection.CustomAttribute.FilterCustomAttributeRecord(CustomAttributeRecord caRecord, MetadataImport scope, Assembly& lastAptcaOkAssembly, RuntimeModule decoratedModule, MetadataToken decoratedToken, RuntimeType attributeFilterType, Boolean mustBeInheritable, Object[] attributes, IList derivedAttributes, RuntimeType& attributeType, IRuntimeMethodInfo& ctor, Boolean& ctorHasParameters, Boolean& isVarArg) at System.Reflection.CustomAttribute.GetCustomAttributes(RuntimeModule decoratedModule, Int32 decoratedMetadataToken, Int32 pcaCount, RuntimeType attributeFilterType, Boolean mustBeInheritable, IList derivedAttributes, Boolean isDecoratedTargetSecurityTransparent) at System.Reflection.CustomAttribute.GetCustomAttributes(RuntimePropertyInfo property, RuntimeType caType) at System.Reflection.RuntimePropertyInfo.GetCustomAttributes(Type attributeType, Boolean inherit) at System.Runtime.Serialization.ClassDataContract.ClassDataContractCriticalHelper.ImportDataMembers() at System.Runtime.Serialization.ClassDataContract.ClassDataContractCriticalHelper..ctor(Type type) at System.Runtime.Serialization.DataContract.DataContractCriticalHelper.CreateDataContract(Int32 id, RuntimeTypeHandle typeHandle, Type type) at System.Runtime.Serialization.DataContract.DataContractCriticalHelper.GetDataContractSkipValidation(Int32 id, RuntimeTypeHandle typeHandle, Type type) at System.Runtime.Serialization.XmlObjectSerializerContext.GetDataContract(Int32 id, RuntimeTypeHandle typeHandle) at System.Runtime.Serialization.XmlObjectSerializerWriteContext.InternalSerialize(XmlWriterDelegator xmlWriter, Object obj, Boolean isDeclaredType, Boolean writeXsiType, Int32 declaredTypeID, RuntimeTypeHandle declaredTypeHandle) at WriteArrayOfClientInfoToXml(XmlWriterDelegator , Object , XmlObjectSerializerWriteContext , CollectionDataContract ) at System.Runtime.Serialization.CollectionDataContract.WriteXmlValue(XmlWriterDelegator xmlWriter, Object obj, XmlObjectSerializerWriteContext context) at System.Runtime.Serialization.XmlObjectSerializerWriteContext.WriteDataContractValue(DataContract dataContract, XmlWriterDelegator xmlWriter, Object obj, RuntimeTypeHandle declaredTypeHandle) at System.Runtime.Serialization.XmlObjectSerializerWriteContext.SerializeAndVerifyType(DataContract dataContract, XmlWriterDelegator xmlWriter, Object obj, Boolean verifyKnownType, RuntimeTypeHandle declaredTypeHandle, Type declaredType) at System.Runtime.Serialization.XmlObjectSerializerWriteContext.SerializeWithXsiTypeAtTopLevel(DataContract dataContract, XmlWriterDelegator xmlWriter, Object obj, RuntimeTypeHandle originalDeclaredTypeHandle, Type graphType) at System.Runtime.Serialization.DataContractSerializer.InternalWriteObjectContent(XmlWriterDelegator writer, Object graph, DataContractResolver dataContractResolver) at System.Runtime.Serialization.DataContractSerializer.InternalWriteObject(XmlWriterDelegator writer, Object graph, DataContractResolver dataContractResolver) at System.Runtime.Serialization.XmlObjectSerializer.WriteObjectHandleExceptions(XmlWriterDelegator writer, Object graph, DataContractResolver dataContractResolver) at System.Runtime.Serialization.DataContractSerializer.WriteObject(XmlWriter writer, Object graph) at System.Net.Http.Formatting.XmlMediaTypeFormatter.<>c__DisplayClass7.<WriteToStreamAsync>b__6() at System.Threading.Tasks.TaskHelpers.RunSynchronously(Action action, CancellationToken token)
+</StackTrace>
+</InnerException>
+</InnerException>
+</Error>
